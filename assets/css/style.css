@@ -1,4 +1,5 @@
 ---
+# DIVIN.DEV custom theme
 ---
 
 @import "minima/skins/{{ site.minima.skin | default: 'dark' }}";
