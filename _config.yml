@@ -3,11 +3,11 @@ author:
   name: divin.dev
   email: hocbaicungcon@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-"Learn to Code - for Free, Hour of Code, Learn to Code - Coding Courses for Dev
+> Learn to Code - for Free, Hour of Code, Learn to Code - Coding Courses for Dev
 🎯 Dart Flutter Framework: Build Native Apps on iOS and Android From a Single Codebase. Download and Build Today. Start With Fully-Customizable Widgets To Build Native Interfaces In Minutes. Open Source.
 💻 Các bài giảng về thuật toán sử dụng ngôn ngữ lập trình Dart
 💻 Video hướng dẫn lập trình Flutter, tự học Flutter để làm app cho Android, iOS, Web...
-💻 Chia sẻ các ebook, tài liệu, sách vở về Flutter Development..."
+💻 Chia sẻ các ebook, tài liệu, sách vở về Flutter Development...
 
 show_excerpts: true # set to true to show excerpts on the homepage
 
