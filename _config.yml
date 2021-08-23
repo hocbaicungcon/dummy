@@ -168,12 +168,12 @@ paginate: 7
 #   shortname: "Your Disqus username"
 
 # Gitment comments
-gitment:
-  username: "hocbaicungcon"
-  repo: "divin.dev"
-  client_id: "Your client ID"
-  client_secret: "Your client secret"
-  redirect_uri: "divin.dev"   # If you use a custom domain name
+# gitment:
+#   username: "hocbaicungcon"
+#   repo: "divin.dev"
+#   client_id: ""
+#   client_secret: 
+#   redirect_uri: "divin.dev"   # If you use a custom domain name
 
 # Build settings
 # highlighter: none
