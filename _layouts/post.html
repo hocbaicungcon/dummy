@@ -58,7 +58,9 @@ sidebar:
 
     {%- assign result = hidden | where_exp: "item", "item == 'comments'" -%}
     {%- if result.size == 0 -%}
-    <div class="post-comments">
+    <div class="fb-comments" data-href="https://divin.dev" data-width="" data-numposts="5"></div>
+    <!-- <div class="post-comments">
+
       {%- if page.comments != false -%}
 
       {%- if site.disqus.shortname -%}
@@ -70,7 +72,7 @@ sidebar:
       {%- endif -%}
 
       {%- endif -%}
-    </div>
+    </div> -->
     {%- endif -%}
 
   </section>
