@@ -32,7 +32,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Learn to Code - for Free, Hour of Code, Learn to Code - Coding Courses for Dev
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://divin.dev" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "/favicon.svg" # the favicon for your site
 
 # Yat date format
@@ -168,12 +168,12 @@ paginate: 7
 #   shortname: "Your Disqus username"
 
 # Gitment comments
-# gitment:
-#   username: "Your GitHub username"
-#   repo: "The repo to store comments"
-#   client_id: "Your client ID"
-#   client_secret: "Your client secret"
-#   redirect_uri: "Your redirect url"   # If you use a custom domain name
+gitment:
+  username: "hocbaicungcon"
+  repo: "divin.dev"
+  client_id: "Your client ID"
+  client_secret: "Your client secret"
+  redirect_uri: "divin.dev"   # If you use a custom domain name
 
 # Build settings
 # highlighter: none
