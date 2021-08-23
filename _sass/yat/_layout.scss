@@ -128,6 +128,9 @@ html {
     display: none;
   }
 
+.site-nav .page-link {
+  font-weight: 600;
+  }
   .page-link {
     line-height: $base-line-height;
     color: $header-text-color;
