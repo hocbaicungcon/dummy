@@ -1,0 +1,345 @@
+I"u<p>A “Hello World” Dart Program</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">main</span><span class="o">()</span> <span class="o">=&gt;</span> <span class="n">print</span><span class="o">(</span><span class="s">'Hello World'</span><span class="o">);</span>
+</code></pre></div></div>
+<p>A “Hello World” Flutter Program</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'package:flutter/material.dart'</span><span class="o">;</span>
+
+<span class="n">main</span><span class="o">()</span> <span class="o">=&gt;</span> <span class="n">runApp</span><span class="o">(</span><span class="n">HelloApp</span><span class="o">());</span>
+
+<span class="kd">class</span> <span class="nc">HelloApp</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span> <span class="o">{</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">MaterialApp</span><span class="o">(</span>
+      <span class="nl">home:</span> <span class="n">Material</span><span class="o">(</span>
+        <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"Hello world!"</span><span class="o">),</span>
+      <span class="o">),</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>A Simple Scaffold</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Scaffold</span><span class="o">(</span>
+  <span class="nl">appBar:</span> <span class="n">AppBar</span><span class="o">(</span>
+    <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"I'm aan AppBar."</span><span class="o">),</span>
+  <span class="o">),</span>
+  <span class="nl">body:</span> <span class="n">Center</span><span class="o">(</span>
+    <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"I'm a Text widget."</span><span class="o">),</span>
+  <span class="o">),</span>
+  <span class="nl">floatingActionButton:</span> <span class="n">FloatingActionButton</span><span class="o">(</span>
+    <span class="nl">child:</span> <span class="n">Icon</span><span class="o">(</span><span class="n">Icons</span><span class="o">.</span><span class="na">ac_unit</span><span class="o">),</span>
+  <span class="o">),</span>
+  <span class="nl">drawer:</span> <span class="n">Drawer</span><span class="o">(</span>
+    <span class="nl">child:</span> <span class="n">Center</span><span class="o">(</span><span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"I'm a drawer."</span><span class="o">)),</span>
+  <span class="o">),</span>
+<span class="o">)</span>
+</code></pre></div></div>
+<p>A Cupertino App</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'package:flutter/cupertino.dart'</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="n">runApp</span><span class="o">(</span><span class="n">CupterinoApp</span><span class="o">());</span>
+
+<span class="kd">class</span> <span class="nc">CupterinoApp</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span> <span class="o">{</span>
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">CupertinoApp</span><span class="o">(</span>
+      <span class="nl">home:</span> <span class="n">CupertinoPageScaffold</span><span class="o">(</span>
+        <span class="nl">navigationBar:</span> <span class="n">CupertinoNavigationBar</span><span class="o">(</span>
+          <span class="nl">backgroundColor:</span> <span class="n">Color</span><span class="o">.</span><span class="na">fromRGBO</span><span class="o">(</span><span class="mi">66</span><span class="o">,</span> <span class="mi">165</span><span class="o">,</span> <span class="mi">245</span><span class="o">,</span> <span class="mf">1.0</span><span class="o">),</span>
+          <span class="nl">middle:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"I'm a navigation bar"</span><span class="o">),</span>
+        <span class="o">),</span>
+        <span class="nl">child:</span> <span class="n">Center</span><span class="o">(</span>
+          <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="s">'Hello from Cupertino, Californa!'</span><span class="o">),</span>
+        <span class="o">),</span>
+      <span class="o">),</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>A Column</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Column</span><span class="o">(</span>
+  <span class="nl">mainAxisAlignment:</span> <span class="n">MainAxisAlignment</span><span class="o">.</span><span class="na">center</span><span class="o">,</span>
+  <span class="nl">children:</span> <span class="o">[</span>
+    <span class="n">Text</span><span class="o">(</span><span class="s">"I'm on top."</span><span class="o">),</span>
+    <span class="n">Text</span><span class="o">(</span><span class="s">"I'm in the middle."</span><span class="o">),</span>
+    <span class="n">Text</span><span class="o">(</span><span class="s">"I'm the bottom."</span><span class="o">),</span>
+  <span class="o">],</span>
+<span class="o">)</span>
+</code></pre></div></div>
+<p>Responding to a Button Press</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'package:flutter/material.dart'</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="n">runApp</span><span class="o">(</span><span class="n">ButtonDemo</span><span class="o">());</span>
+
+<span class="kd">class</span> <span class="nc">ButtonDemo</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span> <span class="o">{</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">MaterialApp</span><span class="o">(</span>
+      <span class="nl">home:</span> <span class="n">MyHomePage</span><span class="o">(),</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">MyHomePage</span> <span class="kd">extends</span> <span class="n">StatefulWidget</span> <span class="o">{</span>
+  <span class="n">_MyHomePageState</span> <span class="n">createState</span><span class="o">()</span> <span class="o">=&gt;</span> <span class="n">_MyHomePageState</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">_MyHomePageState</span> <span class="kd">extends</span> <span class="n">State</span> <span class="o">{</span>
+  <span class="kt">String</span> <span class="n">_whatToDisplay</span><span class="o">;</span>
+  <span class="kt">void</span> <span class="n">initState</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">_whatToDisplay</span> <span class="o">=</span> <span class="s">'Click Me'</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kt">void</span> <span class="n">_doSomething</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">setState</span><span class="o">(()</span> <span class="o">{</span>
+      <span class="n">_whatToDisplay</span> <span class="o">=</span> <span class="s">'Thank you for clicking'</span><span class="o">;</span>
+    <span class="o">});</span>
+  <span class="o">}</span>
+
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">Scaffold</span><span class="o">(</span>
+      <span class="nl">body:</span> <span class="n">Center</span><span class="o">(</span>
+        <span class="nl">child:</span> <span class="n">RaisedButton</span><span class="o">(</span>
+          <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="n">_whatToDisplay</span><span class="o">),</span>
+          <span class="nl">onPressed:</span> <span class="n">_doSomething</span><span class="o">,</span>
+        <span class="o">),</span>
+      <span class="o">),</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>Some Useful Layout Widgets</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Material</span><span class="o">(</span>
+  <span class="nl">child:</span> <span class="n">SafeArea</span><span class="o">(</span>
+    <span class="nl">child:</span> <span class="n">Column</span><span class="o">(</span>
+      <span class="nl">children:</span> <span class="o">[</span>
+        <span class="n">Expanded</span><span class="o">(</span>
+          <span class="nl">child:</span> <span class="n">Container</span><span class="o">(</span>
+            <span class="nl">height:</span> <span class="mf">50.0</span><span class="o">,</span>
+            <span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">blue</span><span class="o">,</span>
+          <span class="o">),</span>
+        <span class="o">),</span>
+        <span class="n">SizedBox</span><span class="o">(</span>
+          <span class="nl">height:</span> <span class="mf">50.0</span><span class="o">,</span>
+        <span class="o">),</span>
+        <span class="n">Container</span><span class="o">(</span>
+          <span class="nl">alignment:</span> <span class="n">Alignment</span><span class="o">.</span><span class="na">bottomRight</span><span class="o">,</span>
+          <span class="nl">height:</span> <span class="mf">100.0</span><span class="o">,</span>
+          <span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">blue</span><span class="o">,</span>
+          <span class="nl">child:</span> <span class="n">Padding</span><span class="o">(</span>
+            <span class="nl">padding:</span> <span class="kd">const</span> <span class="n">EdgeInsets</span><span class="o">.</span><span class="na">all</span><span class="o">(</span><span class="mf">20.0</span><span class="o">),</span>
+            <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span>
+              <span class="s">'Hello'</span><span class="o">,</span>
+              <span class="nl">style:</span> <span class="n">TextStyle</span><span class="o">(</span><span class="nl">backgroundColor:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">red</span><span class="o">),</span>
+            <span class="o">),</span>
+          <span class="o">),</span>
+        <span class="o">),</span>
+      <span class="o">],</span>
+    <span class="o">),</span>
+  <span class="o">),</span>
+<span class="o">)</span>
+</code></pre></div></div>
+<p>A Text Field</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">_MyHomePageState</span> <span class="kd">extends</span> <span class="n">State</span> <span class="o">{</span>
+  <span class="kd">final</span> <span class="n">_myController</span> <span class="o">=</span> <span class="n">TextEditingController</span><span class="o">();</span>
+
+  <span class="nd">@override</span>
+  <span class="kt">void</span> <span class="n">dispose</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">_myController</span><span class="o">.</span><span class="na">dispose</span><span class="o">();</span>
+    <span class="k">super</span><span class="o">.</span><span class="na">dispose</span><span class="o">();</span>
+  <span class="o">}</span>
+
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">Material</span><span class="o">(</span>
+      <span class="nl">child:</span> <span class="n">Center</span><span class="o">(</span>
+        <span class="nl">child:</span> <span class="n">Column</span><span class="o">(</span>
+          <span class="nl">mainAxisAlignment:</span> <span class="n">MainAxisAlignment</span><span class="o">.</span><span class="na">center</span><span class="o">,</span>
+          <span class="nl">children:</span> <span class="o">[</span>
+            <span class="n">TextField</span><span class="o">(</span>
+              <span class="nl">decoration:</span> <span class="n">InputDecoration</span><span class="o">(</span><span class="nl">labelText:</span> <span class="s">"Type something:"</span><span class="o">),</span>
+              <span class="nl">controller:</span> <span class="n">_myController</span><span class="o">,</span>
+            <span class="o">),</span>
+            <span class="n">RaisedButton</span><span class="o">(</span>
+              <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"UPPERCASE"</span><span class="o">),</span>
+              <span class="nl">onPressed:</span> <span class="o">()</span> <span class="o">=&gt;</span>
+                  <span class="n">_myController</span><span class="o">.</span><span class="na">text</span> <span class="o">=</span> <span class="n">_myController</span><span class="o">.</span><span class="na">text</span><span class="o">.</span><span class="na">toUpperCase</span><span class="o">(),</span>
+            <span class="o">),</span>
+          <span class="o">],</span>
+        <span class="o">),</span>
+      <span class="o">),</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>A Slider</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">_MyHomePageState</span> <span class="kd">extends</span> <span class="n">State</span> <span class="o">{</span>
+  <span class="kt">double</span> <span class="n">_sliderValue</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">;</span>
+
+  <span class="kt">void</span> <span class="n">_refreshSlider</span><span class="o">(</span><span class="kt">double</span> <span class="n">newValue</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">setState</span><span class="o">(()</span> <span class="o">{</span>
+      <span class="n">_sliderValue</span> <span class="o">=</span> <span class="n">newValue</span><span class="o">;</span>
+    <span class="o">});</span>
+  <span class="o">}</span>
+
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">Material</span><span class="o">(</span>
+      <span class="nl">child:</span> <span class="n">Center</span><span class="o">(</span>
+        <span class="nl">child:</span> <span class="n">Column</span><span class="o">(</span>
+          <span class="nl">mainAxisAlignment:</span> <span class="n">MainAxisAlignment</span><span class="o">.</span><span class="na">center</span><span class="o">,</span>
+          <span class="nl">children:</span> <span class="o">[</span>
+            <span class="n">Text</span><span class="o">(</span><span class="n">_sliderValue</span><span class="o">.</span><span class="na">toStringAsFixed</span><span class="o">(</span><span class="mi">2</span><span class="o">)),</span>
+            <span class="n">Slider</span><span class="o">(</span>
+              <span class="nl">value:</span> <span class="n">_sliderValue</span><span class="o">,</span>
+              <span class="nl">onChanged:</span> <span class="n">_refreshSlider</span><span class="o">,</span>
+              <span class="nl">min:</span> <span class="mf">1.0</span><span class="o">,</span>
+              <span class="nl">max:</span> <span class="mf">10.0</span><span class="o">,</span>
+            <span class="o">)</span>
+          <span class="o">],</span>
+        <span class="o">),</span>
+      <span class="o">),</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>Radio Buttons</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">_MyHomePageState</span> <span class="kd">extends</span> <span class="n">State</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">_radioValue</span><span class="o">;</span>
+
+  <span class="kt">void</span> <span class="n">_refreshRadio</span><span class="o">(</span><span class="kt">int</span> <span class="n">newValue</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">setState</span><span class="o">(()</span> <span class="o">{</span>
+      <span class="n">_radioValue</span> <span class="o">=</span> <span class="n">newValue</span><span class="o">;</span>
+    <span class="o">});</span>
+  <span class="o">}</span>
+
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">Material</span><span class="o">(</span>
+      <span class="nl">child:</span> <span class="n">Center</span><span class="o">(</span>
+        <span class="nl">child:</span> <span class="n">Column</span><span class="o">(</span>
+          <span class="nl">mainAxisAlignment:</span> <span class="n">MainAxisAlignment</span><span class="o">.</span><span class="na">center</span><span class="o">,</span>
+          <span class="nl">children:</span> <span class="o">[</span>
+            <span class="n">Text</span><span class="o">(</span><span class="n">_radioValue</span><span class="o">?.</span><span class="na">toString</span><span class="o">()</span> <span class="o">??</span> <span class="s">'Select One'</span><span class="o">),</span>
+            <span class="n">Row</span><span class="o">(</span>
+              <span class="nl">mainAxisAlignment:</span> <span class="n">MainAxisAlignment</span><span class="o">.</span><span class="na">center</span><span class="o">,</span>
+              <span class="nl">children:</span> <span class="o">[</span>
+                <span class="n">Text</span><span class="o">(</span><span class="s">'0'</span><span class="o">),</span>
+                <span class="n">Radio</span><span class="o">(</span>
+                    <span class="nl">value:</span> <span class="mi">0</span><span class="o">,</span>
+                    <span class="nl">groupValue:</span> <span class="n">_radioValue</span><span class="o">,</span>
+                    <span class="nl">onChanged:</span> <span class="n">_refreshRadio</span><span class="o">),</span>
+                <span class="n">Text</span><span class="o">(</span><span class="s">'1'</span><span class="o">),</span>
+                <span class="n">Radio</span><span class="o">(</span>
+                    <span class="nl">value:</span> <span class="mi">1</span><span class="o">,</span>
+                    <span class="nl">groupValue:</span> <span class="n">_radioValue</span><span class="o">,</span>
+                    <span class="nl">onChanged:</span> <span class="n">_refreshRadio</span><span class="o">),</span>
+                <span class="n">Text</span><span class="o">(</span><span class="s">'2'</span><span class="o">),</span>
+                <span class="n">Radio</span><span class="o">(</span>
+                  <span class="nl">value:</span> <span class="mi">2</span><span class="o">,</span>
+                  <span class="nl">groupValue:</span> <span class="n">_radioValue</span><span class="o">,</span>
+                  <span class="nl">onChanged:</span> <span class="n">_refreshRadio</span><span class="o">,</span>
+                <span class="o">)</span>
+              <span class="o">],</span>
+            <span class="o">),</span>
+          <span class="o">],</span>
+        <span class="o">),</span>
+      <span class="o">),</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>Basic Navigation</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">FirstPage</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span> <span class="o">{</span>
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">Material</span><span class="o">(</span>
+      <span class="nl">child:</span> <span class="n">Center</span><span class="o">(</span>
+        <span class="nl">child:</span> <span class="n">RaisedButton</span><span class="o">(</span>
+          <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="s">'Go to second page'</span><span class="o">),</span>
+          <span class="nl">onPressed:</span> <span class="o">()</span> <span class="o">{</span>
+            <span class="n">Navigator</span><span class="o">.</span><span class="na">push</span><span class="o">(</span>
+              <span class="n">context</span><span class="o">,</span>
+              <span class="n">MaterialPageRoute</span><span class="o">(</span>
+                <span class="nl">builder:</span> <span class="o">(</span><span class="n">context</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="n">SecondPage</span><span class="o">(),</span>
+              <span class="o">),</span>
+            <span class="o">);</span>
+          <span class="o">},</span>
+        <span class="o">),</span>
+      <span class="o">),</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">SecondPage</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span> <span class="o">{</span>
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">Material</span><span class="o">(</span>
+      <span class="nl">child:</span> <span class="n">Center</span><span class="o">(</span>
+        <span class="nl">child:</span> <span class="n">RaisedButton</span><span class="o">(</span>
+          <span class="nl">onPressed:</span> <span class="o">()</span> <span class="o">{</span>
+            <span class="n">Navigator</span><span class="o">.</span><span class="na">pop</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+          <span class="o">},</span>
+          <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="s">'Go back!'</span><span class="o">),</span>
+        <span class="o">),</span>
+      <span class="o">),</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>A List</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">List</span> <span class="n">movieName</span> <span class="o">=</span> <span class="o">[</span>
+  <span class="s">"Casablanca"</span><span class="o">,</span>
+  <span class="s">"Citizen Kane"</span><span class="o">,</span>
+  <span class="s">"Lawrence of Arabia"</span><span class="o">,</span>
+<span class="o">];</span>
+
+<span class="n">ListView</span><span class="o">.</span><span class="na">builder</span><span class="o">(</span>
+  <span class="nl">itemCount:</span> <span class="n">movieName</span><span class="o">.</span><span class="na">length</span><span class="o">,</span>
+  <span class="nl">itemBuilder:</span> <span class="o">(</span><span class="n">context</span><span class="o">,</span> <span class="n">index</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">ListTile</span><span class="o">(</span>
+        <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="n">movieName</span><span class="o">[</span><span class="n">index</span><span class="o">]),</span>
+        <span class="nl">onTap:</span> <span class="o">()</span> <span class="o">=&gt;</span> <span class="n">_goToDetailPage</span><span class="o">(</span><span class="n">movieName</span><span class="o">[</span><span class="n">index</span><span class="o">]));</span>
+  <span class="o">},</span>
+<span class="o">)</span>
+<span class="n">Animation</span>
+<span class="kd">class</span> <span class="nc">MyHomePageState</span> <span class="kd">extends</span> <span class="n">State</span>
+    <span class="k">with</span> <span class="n">SingleTickerProviderStateMixin</span> <span class="o">{</span>
+  <span class="n">Animation</span> <span class="n">animation</span><span class="o">;</span>
+  <span class="n">AnimationController</span> <span class="n">controller</span><span class="o">;</span>
+
+  <span class="nd">@override</span>
+  <span class="kt">void</span> <span class="n">initState</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">super</span><span class="o">.</span><span class="na">initState</span><span class="o">();</span>
+    <span class="n">controller</span> <span class="o">=</span>
+        <span class="n">AnimationController</span><span class="o">(</span><span class="nl">duration:</span> <span class="kd">const</span> <span class="n">Duration</span><span class="o">(</span><span class="nl">seconds:</span> <span class="mi">3</span><span class="o">),</span> <span class="nl">vsync:</span> <span class="k">this</span><span class="o">);</span>
+    <span class="n">animation</span> <span class="o">=</span> <span class="n">Tween</span><span class="o">(</span><span class="nl">begin:</span> <span class="mf">100.0</span><span class="o">,</span> <span class="nl">end:</span> <span class="mf">500.0</span><span class="o">).</span><span class="na">animate</span><span class="o">(</span><span class="n">controller</span><span class="o">)</span>
+      <span class="o">..</span><span class="na">addListener</span><span class="o">(()</span> <span class="o">{</span>
+        <span class="n">setState</span><span class="o">(()</span> <span class="o">{});</span>
+      <span class="o">});</span>
+    <span class="n">controller</span><span class="o">.</span><span class="na">forward</span><span class="o">();</span>
+  <span class="o">}</span>
+
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">Material</span><span class="o">(</span>
+      <span class="nl">child:</span> <span class="n">Stack</span><span class="o">(</span>
+        <span class="nl">children:</span> <span class="o">[</span>
+          <span class="n">Positioned</span><span class="o">(</span>
+            <span class="nl">left:</span> <span class="mf">150.0</span><span class="o">,</span>
+            <span class="nl">top:</span> <span class="n">animation</span><span class="o">.</span><span class="na">value</span><span class="o">,</span>
+            <span class="nl">child:</span> <span class="n">Icon</span><span class="o">(</span>
+              <span class="n">Icons</span><span class="o">.</span><span class="na">music_note</span><span class="o">,</span>
+              <span class="nl">size:</span> <span class="mf">70.0</span><span class="o">,</span>
+            <span class="o">),</span>
+          <span class="o">),</span>
+        <span class="o">],</span>
+      <span class="o">),</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="nd">@override</span>
+  <span class="kt">void</span> <span class="n">dispose</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">controller</span><span class="o">.</span><span class="na">dispose</span><span class="o">();</span>
+    <span class="k">super</span><span class="o">.</span><span class="na">dispose</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+:ET

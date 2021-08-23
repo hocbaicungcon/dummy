@@ -1,0 +1,112 @@
+I"L<h2 id="entry-point">Entry Point</h2>
+
+<p>Dart cũng giống như Java, mỗi chương trình Dart bắt đầu với một hàm <code class="language-plaintext highlighter-rouge">main</code>.</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">main</span><span class="o">(){</span>
+    <span class="n">print</span><span class="o">(</span><span class="s">'Hello World'</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>hoặc có thể viết gọn lại sử dụng <code class="language-plaintext highlighter-rouge">arrow function</code></p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">main</span><span class="o">()</span> <span class="o">=&gt;</span> <span class="n">print</span><span class="o">(</span><span class="s">'Hello World'</span><span class="o">);</span>
+</code></pre></div></div>
+<h2 id="biến-và-các-kiểu-dữ-liệu">Biến và các kiểu dữ liệu</h2>
+
+<h3 id="biến-là-gì-và-cách-đặt-tên-biến">Biến là gì và cách đặt tên biến</h3>
+
+<h3 id="khởi-tạo-biến">Khởi tạo biến</h3>
+
+<p>Để khởi tạo một biến, chúng ta sử dụng từ khoá <code class="language-plaintext highlighter-rouge">var</code> và theo sau là tên biến</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="n">name</span><span class="o">;</span>
+<span class="kd">var</span> <span class="n">age</span><span class="o">;</span>
+</code></pre></div></div>
+
+<p>Hoặc thay từ khoá <code class="language-plaintext highlighter-rouge">var</code> bằng kiểu dữ liệu của biến và theo sau là tên biến</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">String</span> <span class="n">name</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+</code></pre></div></div>
+
+<h3 id="phép-gán">Phép gán</h3>
+
+<p>Để gán giá trị cho một biến, chúng ta sử dụng phép toán (toán tử - operator) <code class="language-plaintext highlighter-rouge">=</code></p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">name</span> <span class="o">=</span> <span class="s">'Phương'</span><span class="o">;</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">31</span><span class="o">;</span>
+</code></pre></div></div>
+
+<p>Chúng ta cũng có thể vừa khởi tạo một biến vừa gán cho nó một giá trị</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">'Phương'</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">31</span><span class="o">;</span>
+</code></pre></div></div>
+
+<h3 id="các-kiểu-dữ-liệu-của-dart">Các kiểu dữ liệu của Dart</h3>
+
+<h4 id="static-types">Static Types</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kiểu dữ liệu</th>
+      <th>Mô tả</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">int </code></td>
+      <td>Dùng biểu diễn các số nguyên như <code class="language-plaintext highlighter-rouge">1</code> hoặc <code class="language-plaintext highlighter-rouge">-98</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">double</code></td>
+      <td>Biểu diễn các số thực như <code class="language-plaintext highlighter-rouge">3.14</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">bool</code></td>
+      <td>Kiểu logic (Boolean) chỉ có hai giá trị <code class="language-plaintext highlighter-rouge">true</code> và <code class="language-plaintext highlighter-rouge">false</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">String</code></td>
+      <td>Kiểu xâu (chuỗi) kí tự, Immutable string.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">StringBuffer</code></td>
+      <td>Mutable string.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RegExp</code></td>
+      <td>Kiểu biểu thức chính quy (Regular expressions)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">List</code>, <code class="language-plaintext highlighter-rouge">Map</code>, <code class="language-plaintext highlighter-rouge">Set</code></td>
+      <td>Các kiểu dữ liệu tập hợp: Danh sách (mảng, array), từ điển và tập hợp</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DateTime</code></td>
+      <td>A point in time.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Duration</code></td>
+      <td>A span of time.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Uri</code></td>
+      <td>Uniform Resource Identifier</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Error</code></td>
+      <td>Error information</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="dynamic-types">Dynamic Types</h4>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">var</code> keyword declares a variable without specifying its type, leaving the variable as a dynamic.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">dynamic</code> keyword declares a variable of the type <code class="language-plaintext highlighter-rouge">dynamic</code> with optional typing.</li>
+</ul>
+
+:ET

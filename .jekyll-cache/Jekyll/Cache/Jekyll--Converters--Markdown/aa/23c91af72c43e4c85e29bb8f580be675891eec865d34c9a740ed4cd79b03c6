@@ -1,0 +1,335 @@
+I"�<p>A “Hello World” Dart Program</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">main</span><span class="o">()</span> <span class="o">=&gt;</span> <span class="n">print</span><span class="o">(</span><span class="s">'Hello World'</span><span class="o">);</span>
+</code></pre></div></div>
+<p>A “Hello World” Flutter Program
+import ‘package:flutter/material.dart’;</p>
+
+<p>main() =&gt; runApp(HelloApp());</p>
+
+<p>class HelloApp extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Material(
+        child: Text(“Hello world!”),
+      ),
+    );
+  }
+}
+A Simple Scaffold
+Scaffold(
+  appBar: AppBar(
+    title: Text(“I’m aan AppBar.”),
+  ),
+  body: Center(
+    child: Text(“I’m a Text widget.”),
+  ),
+  floatingActionButton: FloatingActionButton(
+    child: Icon(Icons.ac_unit),
+  ),
+  drawer: Drawer(
+    child: Center(child: Text(“I’m a drawer.”)),
+  ),
+)</p>
+
+<p>A Cupertino App
+import ‘package:flutter/cupertino.dart’;</p>
+
+<p>void main() =&gt; runApp(CupterinoApp());</p>
+
+<p>class CupterinoApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return CupertinoApp(
+      home: CupertinoPageScaffold(
+        navigationBar: CupertinoNavigationBar(
+          backgroundColor: Color.fromRGBO(66, 165, 245, 1.0),
+          middle: Text(“I’m a navigation bar”),
+        ),
+        child: Center(
+          child: Text(‘Hello from Cupertino, Californa!’),
+        ),
+      ),
+    );
+  }
+}
+A Column
+Column(
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+    Text(“I’m on top.”),
+    Text(“I’m in the middle.”),
+    Text(“I’m the bottom.”),
+  ],
+)
+Responding to a Button Press
+import ‘package:flutter/material.dart’;</p>
+
+<p>void main() =&gt; runApp(ButtonDemo());</p>
+
+<p>class ButtonDemo extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: MyHomePage(),
+    );
+  }
+}</p>
+
+<p>class MyHomePage extends StatefulWidget {
+  _MyHomePageState createState() =&gt; _MyHomePageState();
+}</p>
+
+<p>class _MyHomePageState extends State {
+  String _whatToDisplay;
+  void initState() {
+    _whatToDisplay = ‘Click Me’;
+  }</p>
+
+<p>void _doSomething() {
+    setState(() {
+      _whatToDisplay = ‘Thank you for clicking’;
+    });
+  }</p>
+
+<p>Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: RaisedButton(
+          child: Text(_whatToDisplay),
+          onPressed: _doSomething,
+        ),
+      ),
+    );
+  }
+}
+Some Useful Layout Widgets
+Material(
+  child: SafeArea(
+    child: Column(
+      children: [
+        Expanded(
+          child: Container(
+            height: 50.0,
+            color: Colors.blue,
+          ),
+        ),
+        SizedBox(
+          height: 50.0,
+        ),
+        Container(
+          alignment: Alignment.bottomRight,
+          height: 100.0,
+          color: Colors.blue,
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Text(
+              ‘Hello’,
+              style: TextStyle(backgroundColor: Colors.red),
+            ),
+          ),
+        ),
+      ],
+    ),
+  ),
+)
+A Text Field
+class _MyHomePageState extends State {
+  final _myController = TextEditingController();</p>
+
+<p>@override
+  void dispose() {
+    _myController.dispose();
+    super.dispose();
+  }</p>
+
+<p>@override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TextField(
+              decoration: InputDecoration(labelText: “Type something:”),
+              controller: _myController,
+            ),
+            RaisedButton(
+              child: Text(“UPPERCASE”),
+              onPressed: () =&gt;
+                  _myController.text = _myController.text.toUpperCase(),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+A Slider
+class _MyHomePageState extends State {
+  double _sliderValue = 1.0;</p>
+
+<p>void _refreshSlider(double newValue) {
+    setState(() {
+      _sliderValue = newValue;
+    });
+  }</p>
+
+<p>@override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(_sliderValue.toStringAsFixed(2)),
+            Slider(
+              value: _sliderValue,
+              onChanged: _refreshSlider,
+              min: 1.0,
+              max: 10.0,
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+Radio Buttons
+class _MyHomePageState extends State {
+  int _radioValue;</p>
+
+<p>void _refreshRadio(int newValue) {
+    setState(() {
+      _radioValue = newValue;
+    });
+  }</p>
+
+<p>@override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(_radioValue?.toString() ?? ‘Select One’),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(‘0’),
+                Radio(
+                    value: 0,
+                    groupValue: _radioValue,
+                    onChanged: _refreshRadio),
+                Text(‘1’),
+                Radio(
+                    value: 1,
+                    groupValue: _radioValue,
+                    onChanged: _refreshRadio),
+                Text(‘2’),
+                Radio(
+                  value: 2,
+                  groupValue: _radioValue,
+                  onChanged: _refreshRadio,
+                )
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+Basic Navigation
+class FirstPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: RaisedButton(
+          child: Text(‘Go to second page’),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) =&gt; SecondPage(),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}</p>
+
+<p>class SecondPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: RaisedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text(‘Go back!’),
+        ),
+      ),
+    );
+  }
+}
+A List
+List movieName = [
+  “Casablanca”,
+  “Citizen Kane”,
+  “Lawrence of Arabia”,
+];</p>
+
+<p>ListView.builder(
+  itemCount: movieName.length,
+  itemBuilder: (context, index) {
+    return ListTile(
+        title: Text(movieName[index]),
+        onTap: () =&gt; _goToDetailPage(movieName[index]));
+  },
+)
+Animation
+class MyHomePageState extends State
+    with SingleTickerProviderStateMixin {
+  Animation animation;
+  AnimationController controller;</p>
+
+<p>@override
+  void initState() {
+    super.initState();
+    controller =
+        AnimationController(duration: const Duration(seconds: 3), vsync: this);
+    animation = Tween(begin: 100.0, end: 500.0).animate(controller)
+      ..addListener(() {
+        setState(() {});
+      });
+    controller.forward();
+  }</p>
+
+<p>@override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Stack(
+        children: [
+          Positioned(
+            left: 150.0,
+            top: animation.value,
+            child: Icon(
+              Icons.music_note,
+              size: 70.0,
+            ),
+          ),
+        ],
+      ),
+    );
+  }</p>
+
+<p>@override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+}</p>
+:ET
