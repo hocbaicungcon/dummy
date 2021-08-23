@@ -1,0 +1,7 @@
+I"©<h2 id="get-width-and-height-of-a-widget">Get Width and Height of a Widget</h2>
+<p>In Flutter, you can easily get the size of a specific widget after itâ€™s rendered. What you need to do is to give it a key, then using that key to access currentContext.size property, like this:
+```dart
+// Full screen width and height
+double width = MediaQuery.of(context).size.width;
+double height = MediaQuery.of(context).size.height;</p>
+:ET

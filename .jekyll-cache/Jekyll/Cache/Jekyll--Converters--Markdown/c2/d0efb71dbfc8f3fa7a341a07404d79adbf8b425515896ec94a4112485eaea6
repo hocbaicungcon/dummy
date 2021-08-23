@@ -1,0 +1,25 @@
+I"P<h2 id="get-width-and-height-of-a-widget">Get Width and Height of a Widget</h2>
+<p>In Flutter, you can easily get the size of a specific widget after it’s rendered. What you need to do is to give it a key, then using that key to access currentContext.size property, like this:</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Full screen width and height</span>
+<span class="kt">double</span> <span class="n">width</span> <span class="o">=</span> <span class="n">MediaQuery</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="n">context</span><span class="o">).</span><span class="na">size</span><span class="o">.</span><span class="na">width</span><span class="o">;</span>
+<span class="kt">double</span> <span class="n">height</span> <span class="o">=</span> <span class="n">MediaQuery</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="n">context</span><span class="o">).</span><span class="na">size</span><span class="o">.</span><span class="na">height</span><span class="o">;</span>
+
+<span class="c1">// Height (without SafeArea)</span>
+<span class="kd">var</span> <span class="n">padding</span> <span class="o">=</span> <span class="n">MediaQuery</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="n">context</span><span class="o">).</span><span class="na">padding</span><span class="o">;</span>
+<span class="kt">double</span> <span class="n">height1</span> <span class="o">=</span> <span class="n">height</span> <span class="o">-</span> <span class="n">padding</span><span class="o">.</span><span class="na">top</span> <span class="o">-</span> <span class="n">padding</span><span class="o">.</span><span class="na">bottom</span><span class="o">;</span>
+
+<span class="c1">// Height (without status bar)</span>
+<span class="kt">double</span> <span class="n">height2</span> <span class="o">=</span> <span class="n">height</span> <span class="o">-</span> <span class="n">padding</span><span class="o">.</span><span class="na">top</span><span class="o">;</span>
+
+<span class="c1">// Height (without status and toolbar)</span>
+<span class="kt">double</span> <span class="n">height3</span> <span class="o">=</span> <span class="n">height</span> <span class="o">-</span> <span class="n">padding</span><span class="o">.</span><span class="na">top</span> <span class="o">-</span> <span class="n">kToolbarHeight</span><span class="o">;</span>
+        <span class="nl">key:</span> <span class="n">_key</span><span class="o">,</span> 
+        <span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>Hoặc có thể sử dụng thư viện <code class="language-plaintext highlighter-rouge">dart:ui</code></p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'dart:ui'</span><span class="o">;</span>
+
+<span class="n">window</span><span class="o">.</span><span class="na">physicalSize</span><span class="o">;</span>
+</code></pre></div></div>
+:ET
