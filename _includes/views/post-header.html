@@ -4,7 +4,7 @@
 
   <p class="post-meta">
     <div class="fb-share-button" data-href="https://divin.dev/{{ page.url }}" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdivin.dev%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    <time class="dt-published left-vsplit" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
       {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%} 
       <i class="fa fa-calendar"></i> {{ page.date | date: date_format }}
     </time>
@@ -12,15 +12,17 @@
     {% assign lang = page.lang %}
     {%- include functions.html func='get_reading_time' -%}
     {% assign reading_time = return %}
-    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>
-  </p>
-
-  {%- if page.tags.size > 0 -%}
-  <div class="post-tags">
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}
+    {%- if page.tags.size > 0 -%}
+  <span class="post-tags left-vsplit">
     {%- for tag in page.tags -%}
     <a class="post-tag" href="{{ '/tags.html ' | relative_url }}#{{tag}}">#{{tag}}</a>
     {%- endfor -%}
-  </div>
+  </span>
   {%- endif -%}
+  </span>
+  </p>
+
+  
 
 </header>

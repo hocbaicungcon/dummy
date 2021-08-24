@@ -33,8 +33,7 @@ sidebar:
           page.previous.title | escape }}">{{ page.previous.title | escape | truncatewords: 6 }}</a>
       {%- else -%}
       <span></span>
-      {%- endif -%}
-      <div class="fb-share-button" data-href="https://divin.dev/{{ page.url }}" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdivin.dev%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+      {%- endif -%}     
 
       {%- if page.next -%}
         <a class="next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title | escape }}">{{ page.next.title | escape | truncatewords: 6 }}</a>
