@@ -63,3 +63,15 @@ a {
 .post .post-header {
   padding: 0 0 16px;
 }
+
+
+post-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 37px 0 57px;
+    padding: 31px 0 0;
+}
+
+.post-nav a {
+  color: #ff5100;
+}
