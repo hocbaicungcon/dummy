@@ -2,7 +2,7 @@
 layout: post
 title: Đệ quy là gì?
 subtitle: Bài viết giới thiệu về thuật toán đệ quy và một số ví dụ minh hoạ
-categories: dart 
+categories: dart algorithms
 tags: [đệ quy, dart, flutter]
 ---
 
