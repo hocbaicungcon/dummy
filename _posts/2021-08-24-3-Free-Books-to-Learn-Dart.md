@@ -8,7 +8,7 @@ tags: [free, ebook, dart, flutter]
 
 #### 1. Learning Dart by Stack Overflow contributors
 
-![Learning Dart](https://divin.dev/assets.images/Learning-Dart.png)
+![Learning Dart](https://divin.dev/assets/images/Learning-Dart.png)
 
 Learning Dart is an unofficial and free dart ebook created for educational purposes. All the content is extracted from Stack Overflow Documentation.
 
@@ -24,9 +24,11 @@ The content is released under Creative Commons BY-SA.
 
 #### 2. Beginning Flutter with Dart by Sanjib Sinha
 
-![Beginning Flutter with Dart](https://divin.dev/assets.images/Beginning-Flutter-Dart.png)Are you an absolute beginner with no prior knowledge to any programming language? Still you want to be a mobile application developer? This book will teach you both. You will learn to build an Android or native iOS mobile application, from scratch, using Flutter framework, and along with it, you will learn Dart programming language.
+![Beginning Flutter with Dart](https://divin.dev/assets/images/Beginning-Flutter-Dart.png)Are you an absolute beginner with no prior knowledge to any programming language? Still you want to be a mobile application developer? This book will teach you both. You will learn to build an Android or native iOS mobile application, from scratch, using Flutter framework, and along with it, you will learn Dart programming language.
 
 This book is incomplete.
+
+
 
 **[Read the book](https://leanpub.com/beginningflutterwithdart)**
 
@@ -34,7 +36,7 @@ This book is incomplete.
 
 #### 3. Essential Dart by Krzysztof Kowalczyk (maintainer)
 
-![Essential Dart](https://divin.dev/assets.images/Essential-Dart.png?resize=166%2C235&ssl=1)Essential Dart is a free book about Dart programming language.
+![Essential Dart](https://divin.dev/assets/images/Essential-Dart.png?resize=166%2C235&ssl=1)Essential Dart is a free book about Dart programming language.
 
 It’s written to provide clear and concise explanation of topics for both beginner and advanced programmers.
 
