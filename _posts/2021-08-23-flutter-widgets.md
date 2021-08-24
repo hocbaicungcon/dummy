@@ -7,7 +7,7 @@ tags: [widget, flutter]
 ---
 ## Các loại widget trong Flutter
 
-Các widget trong Flutter chia làm các loại sau:
+Widget trong Flutter chia làm các loại sau:
 
 - [Accessibility](https://flutter.dev/docs/development/ui/widgets/accessibility) Make your app accessible.
 - [Animation and Motion](https://flutter.dev/docs/development/ui/widgets/animation) Bring animations to your app.
