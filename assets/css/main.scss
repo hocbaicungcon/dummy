@@ -75,3 +75,7 @@ post-nav {
 .post-nav a {
   color: #ff5100;
 }
+
+*:not(pre)>code {
+  margin: 0 0 0 2px;
+}

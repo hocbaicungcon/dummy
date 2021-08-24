@@ -38,18 +38,33 @@ Biến `variable` được dùng để lưu các đối tượng khi ứng dụn
 
 ### Khởi tạo biến
 
-Để khai báo (tạo) một biến, chúng ta sử dụng từ khoá `var` và theo sau là tên biến
+Để khai báo (tạo) một biến, chúng ta sử dụng từ khoá chỉ kiểu của biến và theo sau là tên biến
+
+```dart
+String myName;
+int myAge;
+```
+
+Hoặc thay kiểu của biến bằng từ khoá `var` và theo sau là tên biến
 
 ```dart
 var myNname;
 var myAge;
 ```
 
-Hoặc thay từ khoá `var` bằng kiểu dữ liệu của biến và theo sau là tên biến
+Lúc này, biến sẽ có kiểu là `dynamic` nếu không được gán giá trị khởi tạo. Nếu có giá trị khởi tạo thì biến sẽ nhận kiểu là kiểu của giá trị đó. 
+
+Từ khoá `var` khai báo một biến mà không chỉ ra kiểu của biến. Nếu chúng ta gán giá trị khởi tạo luôn khi khai báo thì Dart sẽ tự xác định kiểu của biến, và sau đó chúng ta không thể thay đổi kiểu của biến được nữa. Còn nếu chúng ta không gán giá trị khởi tạo thì Dart sẽ xác định kiểu của biến là `dynamic`
 
 ```dart
-String myName;
-int myAge;
+void main() {
+  var a; //a có kiểu dynamic
+  a = 123;
+  a = 'Phuong';
+  
+  var b = 123; //b có kiểu int, là kiểu của số 123
+  b = 'Phuong'; //Lỗi ở đây vì kiểu int không thể nhận giá trị kiểu String
+}
 ```
 
 ### Phép gán giá trị `=`
@@ -68,7 +83,9 @@ String name = 'Phương';
 int age = 31;
 ```
 
-### Các kiểu dữ liệu mặc định `built-in types` của Dart
+Kể từ phiên bản 2.0 trở đi thì Dart yêu cầu `null-safety`, tức là bất cứ biến nào cũng cần được gán giá trị trước khi sử dụng, thay vì nhân giá trị mặc định `null` như các phiên bản trước. Do đó, chúng ta thường chọn cách gán giá trị khởi tạo ngay khi khai báo biến.
+
+### Các kiểu dữ liệu xây dựng sẵn `built-in types` trong Dart
 
 #### Dữ liệu kiểu tĩnh (Static Types)
 
@@ -90,8 +107,7 @@ int age = 31;
 
 #### Dynamic Types
 
-- Từ khoá `var` khai báo một biến mà không chỉ ra kiểu của biến.
-- Từ khoá `dynamic` khai báo một biến với kiểu `dynamic` (kiểu động) giúp biến có thể chấp nhận mọi kiểu tĩnh (`static type` ở bảng trên).
+Từ khoá `dynamic` khai báo một biến với kiểu `dynamic` (kiểu động) giúp biến có thể chấp nhận mọi kiểu tĩnh (`static type` ở bảng trên).
 
 ### Hằng số `const`
 
