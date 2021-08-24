@@ -9,18 +9,19 @@
       <i class="fa fa-calendar"></i> {{ page.date | date: date_format }}
     </time>
     {% assign article = page.content %}
-    {% assign lang = page.lang %}
+    <!-- {% assign lang = page.lang %} -->
     {%- include functions.html func='get_reading_time' -%}
     {% assign reading_time = return %}
     <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}
+      </span>
     {%- if page.tags.size > 0 -%}
-  <span class="post-tags left-vsplit">
+  <div class="post-tags"><i class="fa fa-tags"></i>
     {%- for tag in page.tags -%}
     <a class="post-tag" href="{{ '/tags.html ' | relative_url }}#{{tag}}">#{{tag}}</a>
     {%- endfor -%}
-  </span>
+  </div>
   {%- endif -%}
-  </span>
+  
   </p>
 
   

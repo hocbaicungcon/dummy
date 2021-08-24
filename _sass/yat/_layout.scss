@@ -663,7 +663,7 @@ html {
         @include relative-font-size(1.125);
         display: inline-block;
         text-decoration: none;
-        margin: 9px 12px 0 0;
+        margin: 9px 12px 5px 0;
         color: #fff;
 
         &:hover {
@@ -769,8 +769,8 @@ html {
   content: "";
   display: inline-block;
   width: 1px;
-  height: 10px;
-  margin: 0 10px;
+  height: 12px;
+  margin: 0 5px;
   background-color: #e3e3e3e3;
   vertical-align: baseline;
 }
