@@ -27,7 +27,7 @@ class HelloApp extends StatelessWidget {
   }
 }
 ```
-A Stateless Widget
+## A Stateless Widget
 
 ```dart
 import 'package:flutter/material.dart';
@@ -84,7 +84,7 @@ class _WidgetWithStateState extends State<WidgetWithState> {
 }
 ```
 
-A Simple Scaffold
+## A Simple Scaffold
 
 ```dart
 Scaffold(
@@ -102,7 +102,8 @@ Scaffold(
   ),
 )
 ```
-A Cupertino App
+## A Cupertino App
+
 ```dart
 import 'package:flutter/cupertino.dart';
 
@@ -125,7 +126,8 @@ class CupterinoApp extends StatelessWidget {
   }
 }
 ```
-A Column
+## A Column
+
 ```dart
 Column(
   mainAxisAlignment: MainAxisAlignment.center,
@@ -178,7 +180,8 @@ class _MyHomePageState extends State {
   }
 }
 ```
-Some Useful Layout Widgets
+## Some Useful Layout Widgets
+
 ```dart
 Material(
   child: SafeArea(
@@ -210,7 +213,8 @@ Material(
   ),
 )
 ```
-A Text Field
+## A Text Field
+
 ```dart
 class _MyHomePageState extends State {
   final _myController = TextEditingController();
@@ -244,7 +248,8 @@ class _MyHomePageState extends State {
   }
 }
 ```
-A Slider
+## A Slider
+
 ```dart
 class _MyHomePageState extends State {
   double _sliderValue = 1.0;
@@ -276,7 +281,8 @@ class _MyHomePageState extends State {
   }
 }
 ```
-Radio Buttons
+## Radio Buttons
+
 ```dart
 class _MyHomePageState extends State {
   int _radioValue;
@@ -323,7 +329,8 @@ class _MyHomePageState extends State {
   }
 }
 ```
-Basic Navigation
+## Basic Navigation
+
 ```dart
 class FirstPage extends StatelessWidget {
   @override
@@ -362,7 +369,8 @@ class SecondPage extends StatelessWidget {
   }
 }
 ```
-A List
+## A List
+
 ```dart
 List movieName = [
   "Casablanca",
@@ -461,8 +469,6 @@ if (Platform.isAndroid) {
   doSmthAndroidSpecific();
 }
 ```
-
-### Get 
 
 ## Data Types
 

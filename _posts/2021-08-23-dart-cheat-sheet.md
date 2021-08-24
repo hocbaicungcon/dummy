@@ -13,21 +13,6 @@ Bạn có thể sử dụng các IDE như Android Studio, Visual Studio Code ho�
 - Một khối lệnh được đặt trong cặp ngoặc móc `{}`
 - Chú thích trên một dòng được viết sau kí tự `//`, chú thích trên nhiều dòng nằm giữa cặp ký hiệu `/*` và `*/`
 
-### Cách đặt tên biến, tên hàm, tên lớp
-
-Một chương trình sử dụng rất nhiều *tên* hay còn gọi là *định danh* để làm tên chương trình, tên hàm, tên biến, tên hằng số…
-
-- Tên trong Dart có độ dài tuỳ ý. Chúng có thể gồm cả chữ cái cả in hoa và in thường, các chữ số và dấu gạch dưới, nhưng bắt buộc phải bắt đầu bằng một chữ cái hoặc dấu gạch dưới. 
-- Chúng ta nên đặt tên sao cho có ý nghĩa và dễ đọc (ngăn cách bởi dấu `_` hoặc viết hoa đầu mỗi từ...)
-
-- Ký tự bắt đầu của tên phải là một dấu gạch dưới `_` hoặc một chữ cái (có thể là chữ hoa hoặc chữ thường). Tiếp theo có thể là một hoặc nhiều ký tự, con số hoặc thậm chí bỏ trống (tức tên chỉ gồm một kí tự).
-- Trong tên không được có dấu cách trắng hoặc các ký tự đặc biệt như: `@ , $ . % ^ ! = + - * / % & ~\` 
-- Tên không được trùng với các *từ khóa* của Dart.
-- Tên của lớp, enum, tham số thường được đặt tên theo kiểu `UpperCamelCase`, tức là bắt đầu bởi chữ cái in hoa, ví dụ `MyClass`
-- Tên biến, hằng, object, hàm thường đặt theokiểu `lowerCamelCase`, tức là bắt đầu bằng chữ cái thường và viết hoa đầu mỗi từ tiếp theo, ví dụ `myVar` hoặc `tinhGiaiThua`
-- Viết tắt khi tên trên 2 từ, lấy ký đầu viết HOA để tạo chữ viết tắt, ví dụ `IOStream`  hoặc `InputOutputStream`
-- Tên bắt đầu với một ký tự gạch dưới `_`  được hiểu rằng đây là một định danh *private* (riêng tư)
-
 ## Hàm `main`
 
 Dart cũng giống như Java, mỗi chương trình Dart bắt đầu với một hàm `main`.  
@@ -49,34 +34,34 @@ Các đoạn mã dưới đây, mặc định đều được đặt trong một
 
 ### Biến là gì?
 
- để lưu các đối tượng khi ứng dụng hoạt động
+Biến `variable` được dùng để lưu các đối tượng khi ứng dụng hoạt động, ví dụ như lưu tên của người dùng, lưu tên và số sản phẩm người dùng đang chọn mua...
 
 ### Khởi tạo biến
 
-Để khởi tạo một biến, chúng ta sử dụng từ khoá `var` và theo sau là tên biến
+Để khai báo (tạo) một biến, chúng ta sử dụng từ khoá `var` và theo sau là tên biến
 
 ```dart
-var name;
-var age;
+var myNname;
+var myAge;
 ```
 
 Hoặc thay từ khoá `var` bằng kiểu dữ liệu của biến và theo sau là tên biến
 
 ```dart
-String name;
-int age;
+String myName;
+int myAge;
 ```
 
-### Phép gán
+### Phép gán giá trị `=`
 
-Để gán giá trị cho một biến, chúng ta sử dụng phép toán (toán tử - operator) `=`
+Để gán giá trị cho một biến, chúng ta sử dụng phép toán (toán tử - operator) `=` sau khi đã khai báo chúng.
 
 ```dart
-name = 'Phương';
-age = 31;
+myName = 'Phương';
+myAge = 31;
 ```
 
-Chúng ta cũng có thể vừa khởi tạo một biến vừa gán cho nó một giá trị
+Chúng ta cũng có thể vừa khai báo một biến vừa gán cho nó một giá trị khởi tạo
 
 ```dart
 String name = 'Phương';
@@ -85,26 +70,28 @@ int age = 31;
 
 ### Các kiểu dữ liệu mặc định `built-in types` của Dart
 
-#### Static Types  
+#### Dữ liệu kiểu tĩnh (Static Types)
 
-| Kiểu dữ liệu         | Mô tả                                                        |
-| -------------------- | ------------------------------------------------------------ |
-| `int `               | Dùng biểu diễn các số nguyên như `1` hoặc `-98`              |
-| `double`             | Biểu diễn các số thực như `3.14`                             |
-| `bool`               | Kiểu logic (Boolean) chỉ có hai giá trị `true` và `false`    |
-| `String`             | Kiểu xâu (chuỗi) kí tự, Immutable string.                    |
-| `StringBuffer`       | Mutable string.                                              |
-| `RegExp`             | Kiểu biểu thức chính quy (Regular expressions)               |
-| `List`, `Map`, `Set` | Các kiểu dữ liệu tập hợp: Danh sách (mảng, array), từ điển và tập hợp |
-| `DateTime`           | A point in time.                                             |
-| `Duration`           | A span of time.                                              |
-| `Uri`                | Uniform Resource Identifier                                  |
-| `Error`              | Error information                                            |
+| Kiểu dữ liệu   | Mô tả                                                        |
+| -------------- | ------------------------------------------------------------ |
+| `int `         | Dùng biểu diễn các số nguyên như `1` hoặc `-98`              |
+| `double`       | Biểu diễn các số thực như `3.14`                             |
+| `bool`         | Kiểu logic (Boolean) chỉ có hai giá trị `true` và `false`    |
+| `String`       | Kiểu xâu (chuỗi) kí tự `immutable` (không thay đổi). Ví dụ có biến `myName` kiểu `String` đang lưu giá trị `phuong` và ta muốn thay đổi thành `Phuong` thì không thể thực hiện phép gán `myName[0]=P` mà bắt buộc thay đổi toàn bộ giá trị của biến `myName='Phuong'` |
+| `StringBuffer` | Kiểu xâu kí tự `mutable` (có thể thay đổi).                  |
+| `RegExp`       | Kiểu biểu thức chính quy (Regular expressions)               |
+| `List`         | Dùng để biểu diễn các danh sách (còn được gọi là mảng, array). Các phần tử của danh sách được đặt trong cặp ngoặc `[]` chẳng hạn `['cam', 'bưởi', 'mướp', 'dưa hấu']` |
+| `Map`          | Dùng để biểu diễn các từ điển, mỗi phần tử của từ điển gồm có một cặp gọi là khoá `key` và giá trị `value` được đặt trong cặp ngoặc `{}`. Ví dụ `{'one' : 'một', 'two' : 'hai', 3 : 'ba'}` |
+| `Set`          | Kiểu tập hợp, tương tự trong Toán học, mỗi phần tử của một tập hợp là duy nhất. Kiểu `set` cũng có các phép toán *hợp, giao, hiệu* tương tự như trong Toán học. |
+| `DateTime`     | Dùng để biểu diễn các mốc thời gian (thời điểm)              |
+| `Duration`     | Dùng biểu diễn một khoảng thời gian (thời lượng)             |
+| `Uri`          | Uniform Resource Identifier                                  |
+| `Error`        | Error information                                            |
 
 #### Dynamic Types
 
-- The `var` keyword declares a variable without specifying its type, leaving the variable as a dynamic.
-- The `dynamic` keyword declares a variable of the type `dynamic` with optional typing.  Khi biến có chấp nhận mọi kiểu thì sử dụng từ khóa `dynamic`
+- Từ khoá `var` khai báo một biến mà không chỉ ra kiểu của biến.
+- Từ khoá `dynamic` khai báo một biến với kiểu `dynamic` (kiểu động) giúp biến có thể chấp nhận mọi kiểu tĩnh (`static type` ở bảng trên).
 
 ### Hằng số `const`
 
