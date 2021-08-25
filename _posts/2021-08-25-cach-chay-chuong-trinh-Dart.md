@@ -27,4 +27,4 @@ Trong cửa sổ CMD, bạn chuyển đến thư mục chứa tệp `hello_world
 
 Kết quả trả về như hình sau:
 
-<img src="../assets/images/image-20210825084305774.png" style="zoom:67%;" />
+<img src="https://divin.dev/assets/images/image-20210825084305774.png" style="zoom:67%;" />
