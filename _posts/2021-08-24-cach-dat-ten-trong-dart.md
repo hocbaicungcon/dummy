@@ -11,7 +11,7 @@ Một chương trình sử dụng rất nhiều *tên* hay còn gọi là *đị
 ### Quy tắc bắt buộc khi đặt tên biến, tên hàm, tên lớp
 
 - Tên trong Dart có độ dài tuỳ ý. Chúng có thể gồm cả chữ cái cả in hoa và in thường, các chữ số và dấu gạch dưới, nhưng bắt buộc phải bắt đầu bằng một chữ cái hoặc dấu gạch dưới. 
-- Trong tên không được có dấu cách trắng hoặc các ký tự đặc biệt như `@ , $ . % ^ ! = + - * / % & ~` 
+- Trong tên không được có dấu cách trắng hoặc các ký tự đặc biệt, ngoại trừ dấu gạch dưới `_` và dấu đô la `$`
 - Tên không được trùng với các *từ khóa* của Dart.
 - Tên bắt đầu với một ký tự gạch dưới `_`  được hiểu rằng đây là một định danh *private* (riêng tư)
 

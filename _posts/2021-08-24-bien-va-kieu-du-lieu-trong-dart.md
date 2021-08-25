@@ -103,5 +103,4 @@ final String email;
 
 Sự khác nhau của `const` và `final` là, các hằng số `const` thì lập trình viên biết ngay khi lập trình và tồn tại trong suốt quá trình viết code cũng như chạy. Còn các biến `final` thì trong lúc viết code, lập trình viên chưa biết giá trị của nó là bao nhiêu, thường là khi chạy nó mới được nhận giá trị (một lần và không thể thay đổi trong suốt thời gian chương trình chạy). Nội dung này các bạn xem thêm các bài viết ở phần `class`
 
-
-
+Nói cách khác, cả `const` và `final` đều dùng cho các hằng số, nhưng `const` là hằng số trong khi biên dịch *compile time*, còn final là hằng số trong khi chạy *run time*.
