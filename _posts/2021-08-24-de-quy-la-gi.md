@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Đệ quy là gì?
-subtitle: Bài viết giới thiệu về thuật toán đệ quy và một số ví dụ minh hoạ
+subtitle: Bài viết giới thiệu về (thuật toán) chương trình đệ quy và một số ví dụ minh hoạ
 categories: dart algorithms
 tags: [đệ quy, dart, flutter]
 ---
@@ -10,7 +10,7 @@ tags: [đệ quy, dart, flutter]
 
 Đệ quy (tiếng Anh: recursion) là phương pháp dùng trong các chương trình máy tính trong đó có một hàm tự gọi chính nó.
 
-Ưu điểm lớn nhất của phép đệ quy là tiếp cận xử lý vấn đề bằng những đoạn code gọn gàng, dễ đọc. Nhược điểm rõ ràng là nguy cơ cao tràn bộ nhớ Stack.
+Ưu điểm của phương pháp đệ quy là tiếp cận xử lý vấn đề bằng những đoạn code gọn gàng, dễ đọc. Nhược điểm là nguy cơ tràn bộ nhớ Stack.
 
 ## Một số ví dụ minh hoạ thuật toán đệ quy
 
