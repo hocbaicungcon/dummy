@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 
-subtitle: 
-categories: dart flutter
-tags: [dart, flutter]
+title: Cách hiển thị công thức Toán trên website
+subtitle: Hướng dẫn cách thêm thư viện MathJax để hiển thị công thức Toán LaTEX trên các website
+categories: html
+tags: [htmp, mathjax, wordpress]
 ---
 
 ## 1. Cách hiển thị công thức Toán trên website bất kì
