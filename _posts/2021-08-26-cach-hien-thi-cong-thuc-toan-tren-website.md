@@ -39,18 +39,19 @@ Cho phương trình bậc hai $$ax^2 + bx + c = 0$$ hoặc \[ax^2 + bx + c = 0\]
 
 ## 2. Cách hiển thị công thức Toán trên website Wordpress
 
-Nguyên tắc vẫn là làm như trên, nhưng nhiều bạn không truy cập được vào hosting thì ta làm như sau:
+Nguyên tắc vẫn là làm như trên, nhưng nhiều bạn không truy cập được vào hosting thì bạn cần đăng nhập Wordpress bằng tài khoản quản trị rồi thực hiện:
 
-Bạn đăng nhập Wordpress bằng tài khoản quản trị, chọn Appearance (Giao diện) rồi chọn tiếp Theme Editor (Sửa giao diện)
+1.  Chọn Appearance (Giao diện)
+2. Chọn tiếp Theme Editor (Sửa giao diện)
 
 <img src="https://divin.dev/assets/images/image-20210826105952558.png" alt="image-20210826105952558" style="zoom:67%;" />
 
-Bên góc trên tay phải, bạn chọn đúng theme muốn sửa rồi chọn tệp `header.php`
+3. Bên góc trên tay phải, bạn chọn đúng tên theme muốn sửa
+4. Chọn tệp `header.php`
 
 <img src="https://divin.dev/assets/images/image-20210826110210672.png" alt="image-20210826110210672" style="zoom:67%;" />
 
-Trong tệp `header.php` bạn tìm đến cặp thẻ  `<head>` và `</head>` rồi làm tiếp như phần 1.
-
-Cuối cùng, chọn Update File để lưu lại các thay đổi.
+5. Trong tệp `header.php` bạn tìm đến cặp thẻ  `<head>` và `</head>` rồi làm tiếp như phần 1.
+6. Cuối cùng, chọn Update File để lưu lại các thay đổi.
 
 <img src="https://divin.dev/assets/images/image-20210826110505946.png" alt="image-20210826110505946" style="zoom:67%;" />
