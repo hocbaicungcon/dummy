@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kiểu xâu String trong Dart/Flutter
-subtitle: Hướng dẫn cách khai báo và sử dụng kiểu xâu (kiểu chuỗi) String trong Dart/FLutter. Các hàm, phương thức thông dụng như tách xâu, tìm xâu con, thay thế xâu con...
+subtitle: Hướng dẫn cách khai báo và sử dụng kiểu xâu (kiểu chuỗi) String trong Dart/FLutter. Các hàm, phương thức thông dụng như tách xâu, tìm xâu con, thay thế xâu con
 categories: dart flutter
 tags: [String, dart, flutter]
 ---
