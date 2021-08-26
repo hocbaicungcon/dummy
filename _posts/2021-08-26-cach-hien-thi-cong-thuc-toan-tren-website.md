@@ -31,20 +31,11 @@ Khi đó, muốn hiển thị công thức toán, bạn sử dụng cách gõ La
 Cho phương trình bậc hai $ax^2 + bx + c = 0$ hoặc \(ax^2 + bx + c = 0\)
 ```
 
-Kết quả sẽ như thế này:
-
-Cho phương trình bậc hai $ax^2 + bx + c = 0$
-
 - công thức nằm riêng trên một dòng trong cặp dấu `$$`, hoặc `\[` và `\]` ví dụ
 
 ```html
 Cho phương trình bậc hai $$ax^2 + bx + c = 0$$ hoặc \[ax^2 + bx + c = 0\]
 ```
-
-Cho phương trình bậc hai
-$$
-ax^2 + bx + c = 0
-$$
 
 ## 2. Cách hiển thị công thức Toán trên website Wordpress
 
