@@ -127,3 +127,17 @@ int fibo(int n) {
     return fibo(n - 1) + fibo(n - 2);
 }
 ```
+
+Lưu ý rằng một khi đã thực thi lệnh `return` thì các câu lệnh phía sau của hàm đó sẽ bị bỏ qua. Do đó, chương trình trên có thể viết gọn hơn như sau:
+
+```dart
+void main() {
+  print(fibo(37)); //Kết quả 24157817
+}
+
+int fibo(int n) {
+  if (n == 1 || n == 2) return 1;
+  return fibo(n - 1) + fibo(n - 2);
+}
+```
+
