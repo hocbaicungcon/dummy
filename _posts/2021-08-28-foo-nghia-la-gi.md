@@ -2,8 +2,8 @@
 layout: post
 title: FOO nghĩa là gì?
 subtitle: Khi xem các đoạn code minh hoạ, bạn thường gặp những từ như `foo` hoặc `bar`. Vậy foo nghĩa là gì?
-categories: dart flutter
-tags: [dart, flutter]
+categories: trick
+tags: [misc]
 ---
 
 ## FOO nghĩa là gì?
