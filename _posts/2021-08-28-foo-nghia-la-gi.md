@@ -3,7 +3,7 @@ layout: post
 title: FOO nghĩa là gì?
 subtitle: Khi xem các đoạn code minh hoạ, bạn thường gặp những từ như `foo` hoặc `bar`. Vậy foo nghĩa là gì?
 categories: trick
-tags: [misc]
+tags: [misc, foo]
 ---
 
 ## FOO nghĩa là gì?
@@ -20,9 +20,9 @@ foo (arg1, arg2){
 }
 ```
 
-## Một số thay thế cho FOO
+## Một số lựa chọn thay thế cho FOO
 
-Bản thân thuật ngữ *foo* không phải là duy nhất đối với thế giới lập trình. Tuy nhiên, nguồn gốc thực sự của từ này có vẻ không rõ ràng. Eric Raymond, tác giả của *New Hacker Dictionary* , nhận xét rằng trong truyện tranh của Bill Holman thời 1930-50, "Smokey Stover", các chữ cái "FOO" thường xuất hiện, không giải thích được và như một kiểu bịt miệng chạy trên biển số xe, trong ảnh. khung và trên mặt sau của bảng hiệu bánh sandwich. Cũng có bằng chứng cho thấy việc sử dụng thuật ngữ *foo* bắt nguồn từ cụm từ FUBAR thời Thế chiến thứ hai , vì không có gì lạ khi thấy cả "foo" và "bar" đều được sử dụng như các biến metasyntactic cùng với nhau, như được hiển thị bên dưới:
+Bản thân thuật ngữ *foo* không phải là duy nhất đối với thế giới lập trình. Tuy nhiên, nguồn gốc thực sự của từ này có vẻ không rõ ràng. Eric Raymond, tác giả của *New Hacker Dictionary*, nhận xét rằng trong truyện tranh của Bill Holman thời 1930-50, "Smokey Stover", các chữ cái "FOO" thường xuất hiện, không giải thích được và như một kiểu bịt miệng chạy trên biển số xe, trong ảnh. khung và trên mặt sau của bảng hiệu bánh sandwich. Cũng có bằng chứng cho thấy việc sử dụng thuật ngữ *foo* bắt nguồn từ cụm từ FUBAR thời Thế chiến thứ hai , vì không có gì lạ khi thấy cả "foo" và "bar" đều được sử dụng như các biến metasyntactic cùng với nhau, như được hiển thị bên dưới:
 
 ```dart
 int max (int foo, int bar){
