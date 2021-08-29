@@ -6,7 +6,7 @@ categories: dart flutter
 tags: [function, dart, flutter]
 ---
 
-Khi khai báo một hàm `function` của một `class` trong Dart, chúng ta thường gặp hai cách khai báo sau:
+Khi khai báo một hàm `function` (thường gặp nhất là khi khai báo hàm của một `class`) trong Dart, chúng ta thường gặp hai cách khai báo sau:
 
 ```dart
 Function first;
