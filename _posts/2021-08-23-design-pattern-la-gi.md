@@ -42,7 +42,7 @@ Nhóm này tập trung các pattern để giải quyết cho việc khởi tạo
 - Pool
 - Prototype
 - Simple Factory
-- Singleton
+- **Singleton:** Tạo ra đối tượng sử dụng cho toàn chương trình và chỉ khởi tạo 1 lần 
 - Static Factory
 
 ### 3.2. Structural Design Patterns (nhóm cấu trúc)
