@@ -8,7 +8,7 @@ tags: [design patterns]
 
 Năm 1994. trong cuốn sách **Design Patterns - Elements of Reusable Object-Oriented Software** của 4 tác giả Erich Gamma, Richard Helm, Ralph Johnson và John Vlissides (4 tác giải này thường được nhắc đến với tên Gang of Four - Bộ Tứ) đã giới thiệu các Design Patterns (mẫu thiết kế) chuẩn cho việc phát triển phần mềm.
 
-<img src="https://divin.dev/divin.dev/assets/images/81gtKoapHFL.jpg" alt="img" style="zoom:50%;" />
+<img src="https://divin.dev/assets/images/81gtKoapHFL.jpg" alt="img" style="zoom:50%;" />
 
 # 1. Design Patterns là gì?
 
