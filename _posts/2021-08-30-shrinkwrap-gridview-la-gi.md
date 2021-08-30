@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Shrink Wrap Property trong Flutter là gì?
-subtitle: 
+subtitle: Thuộc tính Shrink Wrap của ListView, GridView... trong Flutter có tác dụng gì
 categories: dart flutter
-tags: [dart, flutter]
+tags: [dart, flutter, shrinkWrap]
 ---
 
 Các widget như **ListView, GridView** có một thuộc tính là **Shrink Wrap** gây khó hiểu cho nhiều bạn mới học Flutter.
