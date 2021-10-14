@@ -15,7 +15,7 @@ import 'dart:io';
 
 void main() {
     stdout.write("Mời bạn nhập một số nguyên?");
-    int n = stdin.readLineSync();
+    int n = stdin.readLineSync()!;
  
   if (n % 2 == 0)
     print('Số bạn nhập vào là số chẵn.');
