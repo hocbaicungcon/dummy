@@ -2,7 +2,7 @@
 layout: post
 title: How to print() without a newline in Dart?
 subtitle: 
-categories: RegEx
+categories: dart
 tags: [dart, flutter]
 ---
 
