@@ -1,16 +1,14 @@
 ---
 layout: post
-title: Đọc số tự nhiên
+title: Đoán số tự nhiên
 subtitle: 
 categories: dart
 tags: [dart, flutter]
 ---
 
-# Bài tập Dart - Đọc số tự nhiên
+# Bài tập Dart - Đoán số tự nhiên
 
-Viết chương trình in ra cách đọc của một số tự nhiên `n` cho trước có ba chữ số. Ví dụ với `n=123` thì kết quả in ra màn hình là `Một trăm hai mươi ba`
-
-Dưới đây, chúng tôi gợi ý bạn sử dụng từ khóa `switch case` để giải quyết. Nếu sử dụng kiểu dữ liệu `List` hoặc `Map` thì chương trình sẽ gọn hơn rất nhiều.
+Viết chương trình sinh ra một số tự nhiên `n` ngẫu nhiên từ `1` đến `100`. Đề nghị người dùng đoán một số và nhập vào. In ra màn hình thông báo xem số người dùng có chính xác, lớn hơn hay nhỏ hơn số `n`. Nếu chưa đúng thì cho phép người dùng đoán lại hai lần nữa.
 
 ```dart
 import 'dart:io';
