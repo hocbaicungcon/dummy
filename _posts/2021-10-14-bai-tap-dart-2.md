@@ -14,8 +14,8 @@ Viết chương trình hỏi người dùng nhập vào một số nguyên. In r
 import 'dart:io';
 
 void main() {
-    stdout.write("Mời bạn nhập một số nguyên?");
-    int n = stdin.readLineSync()!;
+    stdout.write("Mời bạn nhập một số nguyên: ");
+    int n = int.parse(stdin.readLineSync()!);
  
   if (n % 2 == 0)
     print('Số bạn nhập vào là số chẵn.');

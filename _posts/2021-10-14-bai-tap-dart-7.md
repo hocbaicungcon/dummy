@@ -13,8 +13,11 @@ Viết chương trình in ra cách đọc của một số tự nhiên `n` cho t
 Dưới đây, chúng tôi gợi ý bạn sử dụng từ khóa `switch case` để giải quyết. Nếu sử dụng kiểu dữ liệu `List` hoặc `Map` thì chương trình sẽ gọn hơn rất nhiều.
 
 ```dart
+import 'dart:io';
+
 void main() {
-  int n = 123;
+  print('Mời bạn nhập một số nguyên dương: ');
+  int n = int.parse(stdin.readLineSync()!);
   String hang_tram = '';
   String hang_chuc = '';
   String hang_don_vi = '';
@@ -23,81 +26,117 @@ void main() {
   int c = n % 10;
   switch (a) {
     case 0:
-      hang_tram = 'Không'; break;
+      hang_tram = 'Không';
+      break;
     case 1:
-      hang_tram = 'Một';break;
+      hang_tram = 'Một';
+      break;
     case 2:
-      hang_tram = 'Hai';break;
+      hang_tram = 'Hai';
+      break;
     case 3:
-      hang_tram = 'Ba';break;
+      hang_tram = 'Ba';
+      break;
     case 4:
-      hang_tram = 'Bốn';break;
+      hang_tram = 'Bốn';
+      break;
     case 5:
-      hang_tram = 'Năm';break;
+      hang_tram = 'Năm';
+      break;
     case 6:
-      hang_tram = 'Sáu';break;
+      hang_tram = 'Sáu';
+      break;
     case 7:
-      hang_tram = 'Bảy';break;
+      hang_tram = 'Bảy';
+      break;
     case 8:
-      hang_tram = 'Tám';break;
+      hang_tram = 'Tám';
+      break;
     case 9:
-      hang_tram = 'Chín';break;
+      hang_tram = 'Chín';
+      break;
   }
   switch (b) {
     case 0:
-      hang_chuc = 'không'; break;
+      hang_chuc = 'linh';
+      break;
     case 1:
-      hang_chuc = 'một';break;
+      hang_chuc = 'mười';
+      break;
     case 2:
-      hang_chuc = 'hai';break;
+      hang_chuc = 'hai';
+      break;
     case 3:
-      hang_chuc = 'ba';break;
+      hang_chuc = 'ba';
+      break;
     case 4:
-      hang_chuc = 'bốn';break;
+      hang_chuc = 'bốn';
+      break;
     case 5:
-      hang_chuc = 'năm';break;
+      hang_chuc = 'năm';
+      break;
     case 6:
-      hang_chuc = 'sáu';break;
+      hang_chuc = 'sáu';
+      break;
     case 7:
-      hang_chuc = 'bảy';break;
+      hang_chuc = 'bảy';
+      break;
     case 8:
-      hang_chuc = 'tám';break;
+      hang_chuc = 'tám';
+      break;
     case 9:
-      hang_chuc = 'chín';break;
+      hang_chuc = 'chín';
+      break;
   }
 
   switch (c) {
     case 0:
-      hang_don_vi = ''; break;
+      hang_don_vi = '';
+      break;
     case 1:
-      hang_don_vi = 'một';break;
+      hang_don_vi = 'một';
+      break;
     case 2:
-      hang_don_vi = 'hai';break;
+      hang_don_vi = 'hai';
+      break;
     case 3:
-      hang_don_vi = 'ba';break;
+      hang_don_vi = 'ba';
+      break;
     case 4:
-      hang_don_vi = 'bốn';break;
+      hang_don_vi = 'bốn';
+      break;
     case 5:
-      hang_don_vi = 'năm';break;
+      hang_don_vi = 'năm';
+      break;
     case 6:
-      hang_don_vi = 'sáu';break;
+      hang_don_vi = 'sáu';
+      break;
     case 7:
-      hang_don_vi = 'bảy';break;
+      hang_don_vi = 'bảy';
+      break;
     case 8:
-      hang_don_vi = 'tám';break;
+      hang_don_vi = 'tám';
+      break;
     case 9:
-      hang_don_vi = 'chín';break;
+      hang_don_vi = 'chín';
+      break;
   }
-
-  print('$hang_tram trăm $hang_chuc mươi $hang_don_vi');
+  if (b > 1) {
+    print('$hang_tram trăm $hang_chuc mươi $hang_don_vi');
+  } else {
+    print('$hang_tram trăm $hang_chuc $hang_don_vi');
+  }
 }
 ```
 
 Nếu sử dụng kiểu danh sách, chương trình sẽ như sau:
 
 ```dart
+import 'dart:io';
+
 void main() {
-  int n = 123;
+  print('Mời bạn nhập một số nguyên dương: ');
+  int n = int.parse(stdin.readLineSync()!);
   List<String> chu_thuong = [
     'không',
     'một',
