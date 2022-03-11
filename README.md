@@ -1,2 +1,2 @@
 - Website https://divin.dev chia sẻ các bài viết, kiến thức tự học lập trình Dart, lập trình Flutter
-- Kênh Youtube: https://youtube.com/dartflutter
+- Kênh Youtube: https://youtube.com/dummyfresher
