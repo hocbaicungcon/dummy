@@ -40,8 +40,6 @@ favicon: "/favicon.svg" # the favicon for your site
 yat:
   date_format: "%b %d, %Y"
 
-theme: jekflix
-
 # If you want more debug log, you can set true
 # debug: false
 
