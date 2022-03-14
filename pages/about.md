@@ -1,17 +1,25 @@
 ---
 layout: page
 title: About
-description: Some description.
+description: Giới thiệu kênh Dummy Fresher - Nơi newbie học lập trình.
 permalink: /about/
 ---
 
-<img class="img-rounded" src="/assets/img/uploads/profile.png" alt="Thiago Rossener" width="200">
+<img class="img-rounded" src="/assets/img/uploads/sloth.png" alt="Dummy Fresher" width="200">
 
-# About
+# Giới Thiệu
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Dummy Fresher Channel: Kênh Dạy Lập Trình Dành Cho Người Mới Bắt Đầu Học Lập Trình (Free Coding and Design Courses For Beginners)
+✅Dart Flutter Framework: Build Native Apps on iOS and Android From a Single Codebase. Download and Build Today. Start With Fully-Customizable Widgets To Build Native Interfaces In Minutes. Open Source.
+✅Beginner friendly courses, skill path, Visualize Data with Python. 
+💻 Bài giảng thuật toán sử dụng Dart, ngôn ngữ lập trình Python.
+💻 Video hướng dẫn lập trình Flutter, tự học Flutter để làm app cho Android, iOS, Web...
+💻 Chia sẻ các ebook, tài liệu, sách vở về Flutter Development, Python, AI, Machine Learning...
+✅UI and UX Design using Figma, Adobe XD, Sketch, Adobe Photoshop, Illustrator, Animate...
+💝Donate (Vietnam): Agribank 3205 215 033 513, PHAN VAN PHUONG
+✅Give me a cup of coffee: https://paypal.me/phuongpv?locale.x=vi_VN
+🌐https://dummyfresher.com
+🌐https://divin.dev
+🌐https://o2.edu.vn
+🅰https://amthanhnhapkhau.com.vn
+🅱https://nhathaucodien.info
