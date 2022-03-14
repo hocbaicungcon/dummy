@@ -2,7 +2,7 @@
 layout: post
 title: Vultr là gì?
 subtitle: Vultr là gì? Có nên sử dụng VPS Vultr?
-categories: RegEx
+categories: Web
 tags: [hosting, web, vultr]
 ---
 
