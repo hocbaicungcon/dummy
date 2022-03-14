@@ -11,7 +11,7 @@ tags:
   - python
   - android
   - ios
-show_hero: true
+show_hero: false
 menu:
   - title: Home
     url: /
