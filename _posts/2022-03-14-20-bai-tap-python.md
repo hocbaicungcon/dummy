@@ -2,7 +2,7 @@
 layout: post
 title: 20 bài tập Python có lời giải
 subtitle: Bài tập Python có hướng dẫn như dãy Fibonacci, tính giai thừa, tính tổng, tạo class...
-categories: Python
+categories: python
 tags: [python, bài tập]
 ---
 
