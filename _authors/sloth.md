@@ -8,8 +8,8 @@ bio: Một nông dân thích lập trình. Chậm chạp và lười như một 
 github_username: hocbaicungcon
 facebook_username: hocbaicungcon
 twitter_username: hocbaicungcon
-instagram_username: hocbaicungcon
+instagram_username:
 linkedin_username: hocbaicungcon
-medium_username: hocbaicungcon
+medium_username:
 ---
 
