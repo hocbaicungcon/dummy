@@ -1,5 +1,5 @@
 ---
-date: 2010-09-10 12:26:40
+date:  2022-03-14 12:26:40
 layout: post
 title: Thử công thức Toán
 subtitle: Hiển thị công thức Toán học bằng LaTex
