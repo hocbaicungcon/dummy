@@ -4,7 +4,7 @@ layout: post
 title: Python - Kiểm tra năm nhuận
 subtitle: Kiểm tra xem một năm nhập vào có là năm nhuận không bằng Python
 description: Nhập vào một năm bất kỳ, kiểm tra năm đó có phải năm nhuận hay không. Biết rằng: Năm nhuận là năm chia hết cho 4 nhưng không chia hết cho 100 hoặc chia hết cho 400.
-image: 
+image: https://dummyfresher.com/src/img/uploads/Leap-Day-and-Leap-Year.jpg
 optimized_image: 
 category: python
 tags:
@@ -17,7 +17,7 @@ author: sloth
 
 Yêu cầu: Nhập vào một năm bất kỳ, kiểm tra năm đó có phải năm nhuận hay không. 
 
-<img src="D:/Github/dummy/src/img/uploads/Leap-Day-and-Leap-Year.jpg" alt="Leap-Day-and-Leap-Year" style="zoom:50%;" />
+<img src="https://dummyfresher.com/src/img/uploads/Leap-Day-and-Leap-Year.jpg" alt="Leap-Day-and-Leap-Year" style="zoom:50%;" />
 
 Hướng dẫn: 
 
