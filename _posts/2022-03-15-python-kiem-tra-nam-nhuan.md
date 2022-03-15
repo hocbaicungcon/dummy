@@ -21,7 +21,7 @@ Yêu cầu: Nhập vào một năm bất kỳ, kiểm tra năm đó có phải n
 
 Hướng dẫn: 
 
-{% youtube i-8Q3LksZjg %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i-8Q3LksZjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - Năm nhuận là năm chia hết cho 4 nhưng không chia hết cho 100 hoặc chia hết cho 400.
 - Sử dụng câu lệnh điều kiện `if else`
